@@ -4,6 +4,10 @@
 My "free size" UNO bread board w/ RPi-Pico & Arduino-Nano!
 <img src="pic/UnoPicoNano_Update0129.jpg" width=800>
 
+RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
+<img src="pic/RPi_PicoPinout.jpf" width=640>
+
+
 ## References
   - [RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!
   
