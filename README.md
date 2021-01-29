@@ -10,7 +10,7 @@ With some features:
  - Arduino-Uno/Mega compatible size/Holes.
  
 <img src="pic/UnoPicoNano_Update0129.jpg" width=800>
-<img src="pic/PicoNano_PicoNano.png" width=480>
+<img src="pic/PicoNano_PicoNano.png" width=720>
 <br>
 
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
