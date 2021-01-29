@@ -4,7 +4,7 @@
 My UNO bread-board w/ RPi-Pico & Arduino-Nano!
 With some features:
  - Neopixel RGB LEDs.
- - Shared I2C, SPI, UART and A/D & SD card.
+ - Shared I2C, SPI, UART, A/D & SD card.
  - 5V/3V3 selectable.
  - SPI LCD modulable compatible w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
