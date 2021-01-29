@@ -3,6 +3,6 @@
  
 
 ## References
-  - [RP_Pㄒㄛ](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!
+  - [RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!
   
   
