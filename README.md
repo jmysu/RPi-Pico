@@ -2,6 +2,13 @@
 ### Interesting projects based on RPi-Pico<br>
  
 My "free size" UNO bread board w/ RPi-Pico & Arduino-Nano!
+With some features:
+ - Neopixel RGB LEDs.
+ - Shared I2C, SPI, UART and A/D.
+ - 5V/3V3 selectable.
+ - SPI LCD modulable compatible w/ touch.
+ - Arduino-Uno compatible size.
+ 
 <img src="pic/UnoPicoNano_Update0129.jpg" width=800>
 
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
