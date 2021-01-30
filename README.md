@@ -9,8 +9,8 @@ With some features:
  - SPI LCD modulable compatible w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
  
-<img src="pic/UnoPicoNano_Update0129.jpg" width=800>
-<img src="pic/PicoNano_PicoNano.png" width=720>
+<img src="pic/UnoPico.png" width=480><img src="pic/UnoNano.png" width=480> <br>
+<img src="pic/UnoPicoNano.png" width=480><img src="pic/PicoNano_Back.png" width=480>
 <br>
 
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
