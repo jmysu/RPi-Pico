@@ -17,8 +17,12 @@ With some added features:
 
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
+<br>
+Zoomable RP2040 Teardown:
+https://siliconpr0n.org/map/raspberry-pi/rp2-b0/mz_mit20x/
 
-
+<br>
+<br>
 ## References
   - [RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!
   - [Arduino RP2040 Connect](https://blog.arduino.cc/2021/01/20/welcome-raspberry-pi-to-the-world-of-microcontrollers/) Arduino board for RP2040.
