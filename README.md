@@ -11,7 +11,7 @@ With some features:
  
 <img src="pic/UnoPico.png" width=480><img src="pic/UnoNano.png" width=480> <br>
 <img src="pic/UnoPicoNano.png" width=480><img src="pic/PicoNano_Back.png" width=480><br>
-<img src="pic/UnoQtX.png" width=480><img src="pic/PicoQtX.png" width=480> (Qt-Py/Xiao added!)<br>
+<img src="pic/UnoQtX.png" width=480><img src="pic/PicoQtX.png" width=480> <br>(Qt-Py/Xiao added!)<br>
 <br>
 <br>
 
