@@ -2,16 +2,16 @@
 ### Interesting projects based on RPi-Pico<br>
  
 My UNO bread-board w/ RPi-Pico & Arduino-Nano/Adafruit QtPy/SEEED Xiao!
-With some features:
+With some added features:
  - Neopixel RGB LEDs.
  - Shared I2C, SPI, UART, A/D & SD card.
  - 5V/3V3 selectable.
  - SPI LCD modulable compatible w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
  
-<img src="pic/UnoPico.png" width=480><img src="pic/UnoNano.png" width=480> <br>
-<img src="pic/UnoPicoNano.png" width=480><img src="pic/PicoNano_Back.png" width=480><br>
-<img src="pic/UnoQtX.png" width=480><img src="pic/PicoQtX.png" width=480> <br>(Qt-Py/Xiao added!)<br>
+<img src="pic/UnoPico.png" width=400><img src="pic/UnoNano.png" width=400> <br>
+<img src="pic/UnoPicoNano.png" width=400><img src="pic/PicoNano_Back.png" width=400><br>
+<img src="pic/UnoQtX.png" width=400><img src="pic/PicoQtX.png" width=420> <br>(Qt-Py/Xiao added!)<br>
 <br>
 <br>
 
