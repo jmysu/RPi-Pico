@@ -20,4 +20,5 @@ RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-sta
 ## References
   - [RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!
   - [Arduino RP2040 Connect](https://blog.arduino.cc/2021/01/20/welcome-raspberry-pi-to-the-world-of-microcontrollers/) Arduino board for RP2040.
+  - [RP2040 Teardown] (https://blog.adafruit.com/2021/01/29/die-shots-of-the-raspberry-pi-rp2040-chip-teardown-dieshot-reverseengineering-piday-johndmcmaster-raspberry_pi/)
   
