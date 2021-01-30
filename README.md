@@ -18,7 +18,8 @@ With some added features:
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
 <br>
-Zoomable RP2040 Teardown:
+<br>
+Zoomable RP2040 Chip Teardown:
 https://siliconpr0n.org/map/raspberry-pi/rp2-b0/mz_mit20x/
 
 <br>
