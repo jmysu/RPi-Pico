@@ -10,6 +10,7 @@ With some features:
  - Arduino-Uno/Mega compatible size/Holes.
  
 <img src="pic/UnoPico.png" width=480><img src="pic/UnoNano.png" width=480> <br>
+<img src="pic/PicoQtX.png" width=480><br>
 <img src="pic/UnoPicoNano.png" width=480><img src="pic/PicoNano_Back.png" width=480>
 <br>
 
