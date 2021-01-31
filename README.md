@@ -25,6 +25,9 @@ https://siliconpr0n.org/map/raspberry-pi/rp2-b0/mz_mit20x/ <br>
 RP2040 Chip Teardown:
 https://buzzchronicles.com/Mollyycolllinss/b/tech/10662/
 
+Another Chip Details posted at [Tiny Transistor](https://www.tinytransistors.net/2021/01/27/raspberry-pi-pico/) <br>
+<img src="pic/RP2040-die-shot.jpg" width=640>
+
 <br>
 <br>
 
