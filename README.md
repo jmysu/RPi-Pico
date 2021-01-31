@@ -19,8 +19,11 @@ RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-sta
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
 <br>
 <br>
-Zoomable RP2040 Chip Teardown:
-https://siliconpr0n.org/map/raspberry-pi/rp2-b0/mz_mit20x/
+Zoomable RP2040 Chip Top Layer:
+https://siliconpr0n.org/map/raspberry-pi/rp2-b0/mz_mit20x/ <br>
+
+RP2040 Chip Teardown:
+https://buzzchronicles.com/Mollyycolllinss/b/tech/10662/
 
 <br>
 <br>
