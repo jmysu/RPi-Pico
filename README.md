@@ -19,15 +19,16 @@ RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-sta
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
 <br>
 <br>
-Zoomable RP2040 Chip Top Layer:
+Zoomable RP2040 top layer:
 https://siliconpr0n.org/map/raspberry-pi/rp2-b0/mz_mit20x/ <br>
 
-RP2040 Chip Teardown:
-https://buzzchronicles.com/Mollyycolllinss/b/tech/10662/
+RP2040 chip teardown:
+https://buzzchronicles.com/Mollyycolllinss/b/tech/10662/ <br>
 
-Another Chip Details posted at [Tiny Transistor](https://www.tinytransistors.net/2021/01/27/raspberry-pi-pico/) <br>
+Another inside description posted at [Tiny Transistor](https://www.tinytransistors.net/2021/01/27/raspberry-pi-pico/) <br>
 <img src="pic/RP2040-die-shot.jpg" width=640>
 
+<br>
 <br>
 <br>
 
