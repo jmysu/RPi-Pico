@@ -6,7 +6,7 @@ With some added features:
  - Neopixel RGB LEDs.
  - Shared I2C, SPI, UART, A/D & SD card.
  - 5V/3V3 selectable.
- - SPI LCD modulable compatible w/ touch.
+ - SPI LCD interface w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
  
 <img src="pic/UnoPicoNanoQ_Top.png" width=400><img src="pic/UnoPicoNanoQ_Btm.png" width=400> <br>
