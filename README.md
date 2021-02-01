@@ -9,9 +9,9 @@ With some added features:
  - SPI LCD modulable compatible w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
  
-<img src="pic/UnoPico.png" width=400><img src="pic/UnoNano.png" width=400> <br>
-<img src="pic/UnoPicoNano.png" width=400><img src="pic/PicoNano_Back.png" width=400><br>
-<img src="pic/UnoQtX.png" width=400><img src="pic/PicoQtX.png" width=410> <br>(Qt-Py/Xiao added!)<br>
+<img src="pic/UnoPicoNanoQ_Top.png" width=400><img src="pic/UnoPicoNanoQ_Btm.png" width=400> <br>
+<img src="pic/UnoPicoNanoQ_Pico.png" width=400><img src="pic/UnoPicoNanoQ_PicoNano.png" width=400><br>
+<img src="pic/UnoPicoNanoQ_PicoQ.png" width=400> <br>(w/ QtPy/Xiao)<br>
 <br>
 <br>
 
