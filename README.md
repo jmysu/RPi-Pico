@@ -7,7 +7,7 @@ With some added features:
  - Shared I2C, SPI, UART, A/D & SD card.
  - 5V/3V3 power source selectable.
  - SPI LCD interface w/ touch.
- - Arduino-Uno/Mega compatible size/Holes.
+ - Arduino-Uno/Mega compatible size/Holes.<br>
 <img src="pic/UnoPicoQ.gif" width=640><br>
 
 <img src="pic/UnoPicoNanoQ_Top.png" width=400><img src="pic/UnoPicoNanoQ_Btm.png" width=400> <br>
