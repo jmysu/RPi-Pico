@@ -8,7 +8,8 @@ With some added features:
  - 5V/3V3 power source selectable.
  - SPI LCD interface w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
- 
+<img src="pic/UnoPicoQ.gif"><br>
+
 <img src="pic/UnoPicoNanoQ_Top.png" width=400><img src="pic/UnoPicoNanoQ_Btm.png" width=400> <br>
 <img src="pic/UnoPicoNanoQ_Pico.png" width=400><img src="pic/UnoPicoNanoQ_PicoNano.png" width=400>(w/ Nano)<br>
 <img src="pic/UnoPicoNanoQ_PicoQ.png" width=400>(w/ QtPy or Xiao)<br>
