@@ -5,7 +5,7 @@ My UNO bread-board w/ RPi-Pico, Arduino-Nano, Adafruit QtPy, SEEED Xiao!
 With some added features:
  - Neopixel RGB LEDs.
  - Shared I2C, SPI, UART, A/D & SD card.
- - 5V/3V3 selectable.
+ - 5V/3V3 power source selectable.
  - SPI LCD interface w/ touch.
  - Arduino-Uno/Mega compatible size/Holes.
  
