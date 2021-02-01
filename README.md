@@ -10,8 +10,8 @@ With some added features:
  - Arduino-Uno/Mega compatible size/Holes.
  
 <img src="pic/UnoPicoNanoQ_Top.png" width=400><img src="pic/UnoPicoNanoQ_Btm.png" width=400> <br>
-<img src="pic/UnoPicoNanoQ_Pico.png" width=400><img src="pic/UnoPicoNanoQ_PicoNano.png" width=400><br>
-<img src="pic/UnoPicoNanoQ_PicoQ.png" width=400> <br>(w/ QtPy/Xiao)<br>
+<img src="pic/UnoPicoNanoQ_Pico.png" width=400><img src="pic/UnoPicoNanoQ_PicoNano.png" width=400><br>(w/ Nano)
+<img src="pic/UnoPicoNanoQ_PicoQ.png" width=400> <br>(w/ QtPy or Xiao)<br>
 <br>
 <br>
 
