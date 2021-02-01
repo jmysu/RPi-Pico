@@ -12,7 +12,6 @@ With some added features:
 <img src="pic/UnoPicoNanoQ_Top.png" width=400><img src="pic/UnoPicoNanoQ_Btm.png" width=400> <br>
 <img src="pic/UnoPicoNanoQ_Pico.png" width=400><img src="pic/UnoPicoNanoQ_PicoNano.png" width=400>(w/ Nano)<br>
 <img src="pic/UnoPicoNanoQ_PicoQ.png" width=400>(w/ QtPy or Xiao)<br>
-<img src="hardware/3D/UnoPicoNano.wrl">
 <br>
 <br>
 
