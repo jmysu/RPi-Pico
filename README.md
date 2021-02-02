@@ -1,7 +1,7 @@
 # Party Time, Arms! [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)<br>
 ### Interesting projects based on RPi-Pico  _(Work-in-Progress)_<br>
  
-My UNO bread-board w/ RPi-Pico, Arduino-Nano, Adafruit QtPy, SEEED Xiao!
+An UNO bread-board w/ RPi-Pico, Arduino-Nano, Adafruit QtPy, SEEED Xiao!
 With some added features:
  - Neopixel RGB LEDs.
  - Shared I2C, SPI, UART, A/D & SD card.
