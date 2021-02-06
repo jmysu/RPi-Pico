@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<board-params board='UnoPicoNano' include-vias='true' shrink-holes-factor='1.0' gender='male' >
+<!-- please fill in the author, title, description, tags, and properties elements-->
+<author>jmyCraft</author>
+<title> UnoPico Fritz Part </title>
+<url></url>
+<description>UnoPicoNanoQ</description>
+<tags>
+<!-- <tag> UnoPico </tag> -->
+</tags>
+<properties>
+<!-- <property name='family'>UnoPico</property> -->
+</properties>
+<breadboard breadboard-color='#407050'>
+<extra-layers>
+<!-- to add extra layers to the breadboard,
+uncomment the following <layer> elements,
+and change the 'number' attribute to the appropriate eagle layer number.
+You can add as many <layer> elements as you like -->
+<layer number='21' />
+<!-- <layer number='1' /> -->
+<!-- <layer number='29' /> -->
+</extra-layers>
+<includes>
+<!-- to include other svgs in the breadboard,
+uncomment the following <include> elements,
+and change the src and coordinates (coordinates without units are treated as 90 dpi px).
+You can add as many <include> elements as you like -->
+<!-- <include src='full path name to something.svg' x='0in' y='0in'/> -->
+</includes>
+<!-- Add 'nudges' to modify how packages and texts are displayed  -->
+<nudges>
+<!-- <nudge package='jstph2' y='0.25mm' /> -->
+</nudges>
+</breadboard>
+<connectors>
+<!-- Add 'rename' elements to modify how signals are named in fritzing  -->
+<renames> -->
+<!-- <rename signal='FROM' to='TO' package='PACKAGE' element='ELEMENT' /> -->
+</renames>
+<power>
+<!-- left to right -->
+<connector signal='VCC' id='49' package='HW4-2.0' element='J2' name='3' type='pad'/>
+<connector signal='VCC' id='53' package='HW4-2.0' element='J3' name='3' type='pad'/>
+<connector signal='3V_PI' id='55' package='1X02' element='J4' name='1' type='pad'/>
+<connector signal='3VNANO' id='56' package='1X02' element='J4' name='2' type='pad'/>
+<connector signal='5VPICO' id='57' package='1X20_NOSILK' element='J5' name='1' type='pad'/>
+<connector signal='VSYS' id='58' package='1X20_NOSILK' element='J5' name='2' type='pad'/>
+<connector signal='3V3EN' id='60' package='1X20_NOSILK' element='J5' name='4' type='pad'/>
+<connector signal='3V_PI' id='61' package='1X20_NOSILK' element='J5' name='5' type='pad'/>
+<connector signal='VCC' id='62' package='1X20_NOSILK' element='J5' name='6' type='pad'/>
+<connector signal='VCC' id='87' package='HW4-2.0' element='J7' name='3' type='pad'/>
+<connector signal='VCC' id='91' package='HW4-2.0' element='J8' name='3' type='pad'/>
+<connector signal='VCC' id='93' package='1X09_LOCK' element='J9' name='1' type='pad'/>
+<connector signal='VCC' id='100' package='1X09_LOCK' element='J9' name='8' type='pad'/>
+<connector signal='VCC' id='121' package='1X09_LOCK' element='J12' name='1' type='pad'/>
+<connector signal='VCC' id='128' package='1X09_LOCK' element='J12' name='8' type='pad'/>
+<connector signal='5VPICO' id='140' package='1X03' element='JP6' name='1' type='pad'/>
+<connector signal='5VA' id='141' package='1X03' element='JP6' name='2' type='pad'/>
+<connector signal='5VNANO' id='142' package='1X03' element='JP6' name='3' type='pad'/>
+<connector signal='VCC' id='150' package='1X08' element='JP7' name='8' type='pad'/>
+<connector signal='5V' id='151' package='1X03' element='JP8' name='1' type='pad'/>
+<connector signal='5V' id='152' package='1X03' element='JP8' name='2' type='pad'/>
+<connector signal='5V' id='153' package='1X03' element='JP8' name='3' type='pad'/>
+<connector signal='3V3A' id='155' package='1X06' element='JP9' name='2' type='pad'/>
+<connector signal='5VA' id='156' package='1X06' element='JP9' name='3' type='pad'/>
+<connector signal='VIN' id='159' package='1X06' element='JP9' name='6' type='pad'/>
+<connector signal='5VPICO' id='182' package='RPI_PICO_40P' element='M1' name='P$1' type='pad'/>
+<connector signal='VSYS' id='183' package='RPI_PICO_40P' element='M1' name='P$2' type='pad'/>
+<connector signal='3V3EN' id='185' package='RPI_PICO_40P' element='M1' name='P$4' type='pad'/>
+<connector signal='3V_PI' id='186' package='RPI_PICO_40P' element='M1' name='P$5' type='pad'/>
+<connector signal='VCC' id='187' package='RPI_PICO_40P' element='M1' name='P$6' type='pad'/>
+<connector signal='3VNANO' id='223' package='ARDUINO_NANO' element='NANO' name='2' type='pad'/>
+<connector signal='VCC' id='224' package='ARDUINO_NANO' element='NANO' name='3' type='pad'/>
+<connector signal='5VNANO' id='233' package='ARDUINO_NANO' element='NANO' name='12' type='pad'/>
+<connector signal='VCC' id='348' package='SEWALLI' element='TP2' name='P$1' type='pad'/>
+<connector signal='3VNANO' id='362' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='12' type='pad'/>
+<connector signal='5VNANO' id='364' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='14' type='pad'/>
+</power>
+<ground>
+<!-- left to right -->
+<connector signal='GND' id='29' package='1X20_NOSILK' element='J1' name='3' type='pad'/>
+<connector signal='GND' id='34' package='1X20_NOSILK' element='J1' name='8' type='pad'/>
+<connector signal='GND' id='39' package='1X20_NOSILK' element='J1' name='13' type='pad'/>
+<connector signal='GND' id='44' package='1X20_NOSILK' element='J1' name='18' type='pad'/>
+<connector signal='GND' id='50' package='HW4-2.0' element='J2' name='4' type='pad'/>
+<connector signal='GND' id='54' package='HW4-2.0' element='J3' name='4' type='pad'/>
+<connector signal='GND' id='59' package='1X20_NOSILK' element='J5' name='3' type='pad'/>
+<connector signal='GND' id='64' package='1X20_NOSILK' element='J5' name='8' type='pad'/>
+<connector signal='GND' id='69' package='1X20_NOSILK' element='J5' name='13' type='pad'/>
+<connector signal='GND' id='74' package='1X20_NOSILK' element='J5' name='18' type='pad'/>
+<connector signal='GND' id='88' package='HW4-2.0' element='J7' name='4' type='pad'/>
+<connector signal='GND' id='92' package='HW4-2.0' element='J8' name='4' type='pad'/>
+<connector signal='GND' id='94' package='1X09_LOCK' element='J9' name='2' type='pad'/>
+<connector signal='GND' id='122' package='1X09_LOCK' element='J12' name='2' type='pad'/>
+<connector signal='GND' id='149' package='1X08' element='JP7' name='7' type='pad'/>
+<connector signal='GND' id='157' package='1X06' element='JP9' name='4' type='pad'/>
+<connector signal='GND' id='158' package='1X06' element='JP9' name='5' type='pad'/>
+<connector signal='GND' id='184' package='RPI_PICO_40P' element='M1' name='P$3' type='pad'/>
+<connector signal='GND' id='189' package='RPI_PICO_40P' element='M1' name='P$8' type='pad'/>
+<connector signal='GND' id='194' package='RPI_PICO_40P' element='M1' name='P$13' type='pad'/>
+<connector signal='GND' id='199' package='RPI_PICO_40P' element='M1' name='P$18' type='pad'/>
+<connector signal='GND' id='204' package='RPI_PICO_40P' element='M1' name='P$23' type='pad'/>
+<connector signal='GND' id='209' package='RPI_PICO_40P' element='M1' name='P$28' type='pad'/>
+<connector signal='GND' id='214' package='RPI_PICO_40P' element='M1' name='P$33' type='pad'/>
+<connector signal='GND' id='219' package='RPI_PICO_40P' element='M1' name='P$38' type='pad'/>
+<connector signal='GND' id='235' package='ARDUINO_NANO' element='NANO' name='14' type='pad'/>
+<connector signal='GND' id='240' package='ARDUINO_NANO' element='NANO' name='19' type='pad'/>
+<connector signal='GND' id='350' package='SEWALLI' element='TP4' name='P$1' type='pad'/>
+<connector signal='GND' id='363' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='13' type='pad'/>
+</ground>
+<left>
+<!-- top to bottom -->
+<connector signal='N$8' id='166' package='1X08' element='JP11' name='1' type='pad'/>
+<connector signal='16_MISO0' id='201' package='RPI_PICO_40P' element='M1' name='P$20' type='pad'/>
+<connector signal='16_MISO0' id='79' package='H2X4-2.54' element='J6' name='3' type='pad'/>
+<connector signal='16_MISO0' id='76' package='1X20_NOSILK' element='J5' name='20' type='pad'/>
+<connector signal='17_SS0' id='75' package='1X20_NOSILK' element='J5' name='19' type='pad'/>
+<connector signal='17_SS0' id='77' package='H2X4-2.54' element='J6' name='1' type='pad'/>
+<connector signal='17_SS0' id='200' package='RPI_PICO_40P' element='M1' name='P$19' type='pad'/>
+<connector signal='18_SCK0' id='198' package='RPI_PICO_40P' element='M1' name='P$17' type='pad'/>
+<connector signal='18_SCK0' id='73' package='1X20_NOSILK' element='J5' name='17' type='pad'/>
+<connector signal='18_SCK0' id='80' package='H2X4-2.54' element='J6' name='4' type='pad'/>
+<connector signal='19_MOSI0' id='78' package='H2X4-2.54' element='J6' name='2' type='pad'/>
+<connector signal='19_MOSI0' id='72' package='1X20_NOSILK' element='J5' name='16' type='pad'/>
+<connector signal='19_MOSI0' id='197' package='RPI_PICO_40P' element='M1' name='P$16' type='pad'/>
+<connector signal='N$9' id='167' package='1X08' element='JP11' name='2' type='pad'/>
+<connector signal='N$15' id='68' package='1X20_NOSILK' element='J5' name='12' type='pad'/>
+<connector signal='20_SDA0' id='71' package='1X20_NOSILK' element='J5' name='15' type='pad'/>
+<connector signal='20_SDA0' id='196' package='RPI_PICO_40P' element='M1' name='P$15' type='pad'/>
+<connector signal='21_SCL0' id='195' package='RPI_PICO_40P' element='M1' name='P$14' type='pad'/>
+<connector signal='21_SCL0' id='70' package='1X20_NOSILK' element='J5' name='14' type='pad'/>
+<connector signal='A0' id='160' package='1X06' element='JP10' name='1' type='pad'/>
+<connector signal='A0' id='225' package='ARDUINO_NANO' element='NANO' name='4' type='pad'/>
+<connector signal='A1' id='226' package='ARDUINO_NANO' element='NANO' name='5' type='pad'/>
+<connector signal='A1' id='161' package='1X06' element='JP10' name='2' type='pad'/>
+<connector signal='A2' id='227' package='ARDUINO_NANO' element='NANO' name='6' type='pad'/>
+<connector signal='A2' id='63' package='1X20_NOSILK' element='J5' name='7' type='pad'/>
+<connector signal='A2' id='188' package='RPI_PICO_40P' element='M1' name='P$7' type='pad'/>
+<connector signal='A2' id='162' package='1X06' element='JP10' name='3' type='pad'/>
+<connector signal='A3' id='163' package='1X06' element='JP10' name='4' type='pad'/>
+<connector signal='A3' id='228' package='ARDUINO_NANO' element='NANO' name='7' type='pad'/>
+<connector signal='A4' id='164' package='1X06' element='JP10' name='5' type='pad'/>
+<connector signal='A5' id='165' package='1X06' element='JP10' name='6' type='pad'/>
+<connector signal='D10' id='84' package='H2X4-2.54' element='J6' name='8' type='pad'/>
+<connector signal='D10' id='145' package='1X08' element='JP7' name='3' type='pad'/>
+<connector signal='D11' id='83' package='H2X4-2.54' element='J6' name='7' type='pad'/>
+<connector signal='D11' id='146' package='1X08' element='JP7' name='4' type='pad'/>
+<connector signal='D12' id='147' package='1X08' element='JP7' name='5' type='pad'/>
+<connector signal='D12' id='82' package='H2X4-2.54' element='J6' name='6' type='pad'/>
+<connector signal='D13' id='148' package='1X08' element='JP7' name='6' type='pad'/>
+<connector signal='D13' id='81' package='H2X4-2.54' element='J6' name='5' type='pad'/>
+<connector signal='D22' id='205' package='RPI_PICO_40P' element='M1' name='P$24' type='pad'/>
+<connector signal='D22' id='30' package='1X20_NOSILK' element='J1' name='4' type='pad'/>
+<connector signal='D33' id='206' package='RPI_PICO_40P' element='M1' name='P$25' type='pad'/>
+<connector signal='D33' id='31' package='1X20_NOSILK' element='J1' name='5' type='pad'/>
+<connector signal='D4' id='43' package='1X20_NOSILK' element='J1' name='17' type='pad'/>
+<connector signal='D4' id='170' package='1X08' element='JP11' name='5' type='pad'/>
+<connector signal='D4' id='218' package='RPI_PICO_40P' element='M1' name='P$37' type='pad'/>
+<connector signal='D4' id='243' package='ARDUINO_NANO' element='NANO' name='22' type='pad'/>
+<connector signal='D44' id='32' package='1X20_NOSILK' element='J1' name='6' type='pad'/>
+<connector signal='D44' id='207' package='RPI_PICO_40P' element='M1' name='P$26' type='pad'/>
+<connector signal='D5' id='244' package='ARDUINO_NANO' element='NANO' name='23' type='pad'/>
+<connector signal='D5' id='42' package='1X20_NOSILK' element='J1' name='16' type='pad'/>
+<connector signal='D5' id='171' package='1X08' element='JP11' name='6' type='pad'/>
+<connector signal='D5' id='217' package='RPI_PICO_40P' element='M1' name='P$36' type='pad'/>
+<connector signal='D55' id='33' package='1X20_NOSILK' element='J1' name='7' type='pad'/>
+<connector signal='D55' id='208' package='RPI_PICO_40P' element='M1' name='P$27' type='pad'/>
+<connector signal='D6' id='41' package='1X20_NOSILK' element='J1' name='15' type='pad'/>
+<connector signal='D6' id='216' package='RPI_PICO_40P' element='M1' name='P$35' type='pad'/>
+<connector signal='D6' id='172' package='1X08' element='JP11' name='7' type='pad'/>
+<connector signal='D6' id='245' package='ARDUINO_NANO' element='NANO' name='24' type='pad'/>
+<connector signal='D66' id='35' package='1X20_NOSILK' element='J1' name='9' type='pad'/>
+<connector signal='D66' id='210' package='RPI_PICO_40P' element='M1' name='P$29' type='pad'/>
+<connector signal='D7' id='40' package='1X20_NOSILK' element='J1' name='14' type='pad'/>
+<connector signal='D7' id='173' package='1X08' element='JP11' name='8' type='pad'/>
+<connector signal='D7' id='215' package='RPI_PICO_40P' element='M1' name='P$34' type='pad'/>
+<connector signal='D7' id='246' package='ARDUINO_NANO' element='NANO' name='25' type='pad'/>
+<connector signal='D77' id='211' package='RPI_PICO_40P' element='M1' name='P$30' type='pad'/>
+<connector signal='D77' id='36' package='1X20_NOSILK' element='J1' name='10' type='pad'/>
+<connector signal='D8' id='38' package='1X20_NOSILK' element='J1' name='12' type='pad'/>
+<connector signal='D8' id='213' package='RPI_PICO_40P' element='M1' name='P$32' type='pad'/>
+<connector signal='D8' id='247' package='ARDUINO_NANO' element='NANO' name='26' type='pad'/>
+<connector signal='D8' id='143' package='1X08' element='JP7' name='1' type='pad'/>
+<connector signal='D9' id='37' package='1X20_NOSILK' element='J1' name='11' type='pad'/>
+<connector signal='D9' id='248' package='ARDUINO_NANO' element='NANO' name='27' type='pad'/>
+<connector signal='D9' id='212' package='RPI_PICO_40P' element='M1' name='P$31' type='pad'/>
+<connector signal='D9' id='144' package='1X08' element='JP7' name='2' type='pad'/>
+<connector signal='IRQ' id='106' package='1X05_NO_SILK' element='J10' name='5' type='pad'/>
+</left>
+<right>
+<!-- top to bottom -->
+<connector signal='TXX0' id='89' package='HW4-2.0' element='J8' name='1' type='pad'/>
+<connector signal='TX0' id='202' package='RPI_PICO_40P' element='M1' name='P$21' type='pad'/>
+<connector signal='TX0' id='27' package='1X20_NOSILK' element='J1' name='1' type='pad'/>
+<connector signal='SDA' id='47' package='HW4-2.0' element='J2' name='1' type='pad'/>
+<connector signal='SDA' id='138' package='1X02' element='JP5' name='1' type='pad'/>
+<connector signal='SDA' id='229' package='ARDUINO_NANO' element='NANO' name='8' type='pad'/>
+<connector signal='SDA' id='66' package='1X20_NOSILK' element='J5' name='10' type='pad'/>
+<connector signal='SDA' id='355' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='5' type='pad'/>
+<connector signal='SDA' id='85' package='HW4-2.0' element='J7' name='1' type='pad'/>
+<connector signal='SDA' id='191' package='RPI_PICO_40P' element='M1' name='P$10' type='pad'/>
+<connector signal='SCL' id='65' package='1X20_NOSILK' element='J5' name='9' type='pad'/>
+<connector signal='SCL' id='86' package='HW4-2.0' element='J7' name='2' type='pad'/>
+<connector signal='SCL' id='48' package='HW4-2.0' element='J2' name='2' type='pad'/>
+<connector signal='SCL' id='230' package='ARDUINO_NANO' element='NANO' name='9' type='pad'/>
+<connector signal='SCL' id='139' package='1X02' element='JP5' name='2' type='pad'/>
+<connector signal='SCL' id='190' package='RPI_PICO_40P' element='M1' name='P$9' type='pad'/>
+<connector signal='SCL' id='356' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='6' type='pad'/>
+<connector signal='RXX1' id='90' package='HW4-2.0' element='J8' name='2' type='pad'/>
+<connector signal='RX1' id='203' package='RPI_PICO_40P' element='M1' name='P$22' type='pad'/>
+<connector signal='RX1' id='28' package='1X20_NOSILK' element='J1' name='2' type='pad'/>
+<connector signal='RST' id='67' package='1X20_NOSILK' element='J5' name='11' type='pad'/>
+<connector signal='RST' id='234' package='ARDUINO_NANO' element='NANO' name='13' type='pad'/>
+<connector signal='RST' id='154' package='1X06' element='JP9' name='1' type='pad'/>
+<connector signal='RST' id='124' package='1X09_LOCK' element='J12' name='4' type='pad'/>
+<connector signal='RST' id='239' package='ARDUINO_NANO' element='NANO' name='18' type='pad'/>
+<connector signal='RST' id='192' package='RPI_PICO_40P' element='M1' name='P$11' type='pad'/>
+<connector signal='RST' id='96' package='1X09_LOCK' element='J9' name='4' type='pad'/>
+<connector signal='N$15' id='193' package='RPI_PICO_40P' element='M1' name='P$12' type='pad'/>
+<connector signal='NVIN' id='236' package='ARDUINO_NANO' element='NANO' name='15' type='pad'/>
+<connector signal='NTX' id='51' package='HW4-2.0' element='J3' name='1' type='pad'/>
+<connector signal='NTX' id='357' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='7' type='pad'/>
+<connector signal='NTX' id='237' package='ARDUINO_NANO' element='NANO' name='16' type='pad'/>
+<connector signal='NSS' id='249' package='ARDUINO_NANO' element='NANO' name='28' type='pad'/>
+<connector signal='NSS' id='123' package='1X09_LOCK' element='J12' name='3' type='pad'/>
+<connector signal='NSS' id='351' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='1' type='pad'/>
+<connector signal='NSS' id='95' package='1X09_LOCK' element='J9' name='3' type='pad'/>
+<connector signal='NSCK' id='127' package='1X09_LOCK' element='J12' name='7' type='pad'/>
+<connector signal='NSCK' id='99' package='1X09_LOCK' element='J9' name='7' type='pad'/>
+<connector signal='NSCK' id='359' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='9' type='pad'/>
+<connector signal='NSCK' id='102' package='1X05_NO_SILK' element='J10' name='1' type='pad'/>
+<connector signal='NSCK' id='130' package='1X05_NO_SILK' element='J13' name='1' type='pad'/>
+<connector signal='NSCK' id='222' package='ARDUINO_NANO' element='NANO' name='1' type='pad'/>
+<connector signal='NRX' id='238' package='ARDUINO_NANO' element='NANO' name='17' type='pad'/>
+<connector signal='NRX' id='52' package='HW4-2.0' element='J3' name='2' type='pad'/>
+<connector signal='NRX' id='358' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='8' type='pad'/>
+<connector signal='NMOSI' id='104' package='1X05_NO_SILK' element='J10' name='3' type='pad'/>
+<connector signal='NMOSI' id='98' package='1X09_LOCK' element='J9' name='6' type='pad'/>
+<connector signal='NMOSI' id='126' package='1X09_LOCK' element='J12' name='6' type='pad'/>
+<connector signal='NMOSI' id='132' package='1X05_NO_SILK' element='J13' name='3' type='pad'/>
+<connector signal='NMOSI' id='361' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='11' type='pad'/>
+<connector signal='NMOSI' id='250' package='ARDUINO_NANO' element='NANO' name='29' type='pad'/>
+<connector signal='NMISO' id='101' package='1X09_LOCK' element='J9' name='9' type='pad'/>
+<connector signal='NMISO' id='105' package='1X05_NO_SILK' element='J10' name='4' type='pad'/>
+<connector signal='NMISO' id='133' package='1X05_NO_SILK' element='J13' name='4' type='pad'/>
+<connector signal='NMISO' id='251' package='ARDUINO_NANO' element='NANO' name='30' type='pad'/>
+<connector signal='NMISO' id='360' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='10' type='pad'/>
+<connector signal='NMISO' id='129' package='1X09_LOCK' element='J12' name='9' type='pad'/>
+<connector signal='ND3' id='349' package='SEWALLI' element='TP3' name='P$1' type='pad'/>
+<connector signal='ND3' id='45' package='1X20_NOSILK' element='J1' name='19' type='pad'/>
+<connector signal='ND3' id='354' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='4' type='pad'/>
+<connector signal='ND3' id='169' package='1X08' element='JP11' name='4' type='pad'/>
+<connector signal='ND3' id='242' package='ARDUINO_NANO' element='NANO' name='21' type='pad'/>
+<connector signal='ND3' id='220' package='RPI_PICO_40P' element='M1' name='P$39' type='pad'/>
+<connector signal='ND2' id='46' package='1X20_NOSILK' element='J1' name='20' type='pad'/>
+<connector signal='ND2' id='168' package='1X08' element='JP11' name='3' type='pad'/>
+<connector signal='ND2' id='221' package='RPI_PICO_40P' element='M1' name='P$40' type='pad'/>
+<connector signal='ND2' id='241' package='ARDUINO_NANO' element='NANO' name='20' type='pad'/>
+<connector signal='ND2' id='347' package='SEWALLI' element='TP1' name='P$1' type='pad'/>
+<connector signal='NA7_LCD_CD' id='125' package='1X09_LOCK' element='J12' name='5' type='pad'/>
+<connector signal='NA7_LCD_CD' id='232' package='ARDUINO_NANO' element='NANO' name='11' type='pad'/>
+<connector signal='NA7_LCD_CD' id='352' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='2' type='pad'/>
+<connector signal='NA7_LCD_CD' id='97' package='1X09_LOCK' element='J9' name='5' type='pad'/>
+<connector signal='NA6_TCS' id='131' package='1X05_NO_SILK' element='J13' name='2' type='pad'/>
+<connector signal='NA6_TCS' id='103' package='1X05_NO_SILK' element='J10' name='2' type='pad'/>
+<connector signal='NA6_TCS' id='231' package='ARDUINO_NANO' element='NANO' name='10' type='pad'/>
+<connector signal='NA6_TCS' id='353' package='MOUDLE14P-2.54-21X17.8MM' element='U1' name='3' type='pad'/>
+<connector signal='IRQ' id='134' package='1X05_NO_SILK' element='J13' name='5' type='pad'/>
+</right>
+<mnt>
+<!-- mounting holes -->
+<connector signal='' id='252' package='1,6/0,9' element='PAD1' name='1' type='pad'/>
+<connector signal='' id='253' package='1,6/0,9' element='PAD2' name='1' type='pad'/>
+<connector signal='' id='254' package='1,6/0,9' element='PAD3' name='1' type='pad'/>
+<connector signal='' id='255' package='1,6/0,9' element='PAD4' name='1' type='pad'/>
+<connector signal='' id='256' package='1,6/0,9' element='PAD5' name='1' type='pad'/>
+<connector signal='' id='257' package='1,6/0,9' element='PAD6' name='1' type='pad'/>
+<connector signal='' id='258' package='1,6/0,9' element='PAD7' name='1' type='pad'/>
+<connector signal='' id='259' package='1,6/0,9' element='PAD8' name='1' type='pad'/>
+<connector signal='' id='260' package='1,6/0,9' element='PAD9' name='1' type='pad'/>
+<connector signal='' id='261' package='1,6/0,9' element='PAD10' name='1' type='pad'/>
+<connector signal='' id='262' package='1,6/0,9' element='PAD11' name='1' type='pad'/>
+<connector signal='' id='263' package='1,6/0,9' element='PAD12' name='1' type='pad'/>
+<connector signal='' id='264' package='1,6/0,9' element='PAD13' name='1' type='pad'/>
+<connector signal='' id='265' package='1,6/0,9' element='PAD14' name='1' type='pad'/>
+<connector signal='' id='266' package='1,6/0,9' element='PAD15' name='1' type='pad'/>
+<connector signal='' id='267' package='1,6/0,9' element='PAD16' name='1' type='pad'/>
+<connector signal='' id='268' package='1,6/0,9' element='PAD17' name='1' type='pad'/>
+<connector signal='' id='269' package='1,6/0,9' element='PAD18' name='1' type='pad'/>
+<connector signal='' id='270' package='1,6/0,9' element='PAD19' name='1' type='pad'/>
+<connector signal='' id='271' package='1,6/0,9' element='PAD20' name='1' type='pad'/>
+<connector signal='' id='272' package='1,6/0,9' element='PAD21' name='1' type='pad'/>
+<connector signal='' id='273' package='1,6/0,9' element='PAD22' name='1' type='pad'/>
+<connector signal='' id='274' package='1,6/0,9' element='PAD23' name='1' type='pad'/>
+<connector signal='' id='275' package='1,6/0,9' element='PAD24' name='1' type='pad'/>
+<connector signal='' id='276' package='1,6/0,9' element='PAD25' name='1' type='pad'/>
+<connector signal='' id='277' package='1,6/0,9' element='PAD26' name='1' type='pad'/>
+<connector signal='' id='278' package='1,6/0,9' element='PAD27' name='1' type='pad'/>
+<connector signal='' id='279' package='1,6/0,9' element='PAD28' name='1' type='pad'/>
+<connector signal='' id='280' package='1,6/0,9' element='PAD29' name='1' type='pad'/>
+<connector signal='' id='281' package='1,6/0,9' element='PAD30' name='1' type='pad'/>
+<connector signal='' id='282' package='1,6/0,9' element='PAD31' name='1' type='pad'/>
+<connector signal='' id='283' package='1,6/0,9' element='PAD32' name='1' type='pad'/>
+<connector signal='' id='284' package='1,6/0,9' element='PAD33' name='1' type='pad'/>
+<connector signal='' id='285' package='1,6/0,9' element='PAD34' name='1' type='pad'/>
+<connector signal='' id='286' package='1,6/0,9' element='PAD35' name='1' type='pad'/>
+<connector signal='' id='287' package='1,6/0,9' element='PAD36' name='1' type='pad'/>
+<connector signal='' id='288' package='1,6/0,9' element='PAD37' name='1' type='pad'/>
+<connector signal='' id='289' package='1,6/0,9' element='PAD38' name='1' type='pad'/>
+<connector signal='' id='290' package='1,6/0,9' element='PAD39' name='1' type='pad'/>
+<connector signal='' id='291' package='1,6/0,9' element='PAD40' name='1' type='pad'/>
+<connector signal='' id='292' package='1,6/0,9' element='PAD41' name='1' type='pad'/>
+<connector signal='' id='293' package='1,6/0,9' element='PAD42' name='1' type='pad'/>
+<connector signal='' id='294' package='1,6/0,9' element='PAD43' name='1' type='pad'/>
+<connector signal='' id='295' package='1,6/0,9' element='PAD44' name='1' type='pad'/>
+<connector signal='' id='296' package='1,6/0,9' element='PAD45' name='1' type='pad'/>
+<connector signal='' id='297' package='1,6/0,9' element='PAD46' name='1' type='pad'/>
+<connector signal='' id='298' package='1,6/0,9' element='PAD47' name='1' type='pad'/>
+<connector signal='' id='299' package='1,6/0,9' element='PAD48' name='1' type='pad'/>
+<connector signal='' id='300' package='1,6/0,9' element='PAD49' name='1' type='pad'/>
+<connector signal='' id='301' package='1,6/0,9' element='PAD50' name='1' type='pad'/>
+<connector signal='' id='302' package='1,6/0,9' element='PAD51' name='1' type='pad'/>
+<connector signal='' id='303' package='1,6/0,9' element='PAD52' name='1' type='pad'/>
+<connector signal='' id='304' package='1,6/0,9' element='PAD53' name='1' type='pad'/>
+<connector signal='' id='305' package='1,6/0,9' element='PAD54' name='1' type='pad'/>
+<connector signal='' id='306' package='1,6/0,9' element='PAD55' name='1' type='pad'/>
+<connector signal='' id='307' package='1,6/0,9' element='PAD56' name='1' type='pad'/>
+<connector signal='' id='308' package='1,6/0,9' element='PAD57' name='1' type='pad'/>
+<connector signal='' id='309' package='1,6/0,9' element='PAD58' name='1' type='pad'/>
+<connector signal='' id='310' package='1,6/0,9' element='PAD59' name='1' type='pad'/>
+<connector signal='' id='311' package='1,6/0,9' element='PAD60' name='1' type='pad'/>
+<connector signal='' id='312' package='1,6/0,9' element='PAD61' name='1' type='pad'/>
+<connector signal='' id='313' package='1,6/0,9' element='PAD62' name='1' type='pad'/>
+<connector signal='' id='314' package='1,6/0,9' element='PAD63' name='1' type='pad'/>
+<connector signal='' id='315' package='1,6/0,9' element='PAD64' name='1' type='pad'/>
+<connector signal='' id='316' package='1,6/0,9' element='PAD65' name='1' type='pad'/>
+<connector signal='' id='317' package='1,6/0,9' element='PAD66' name='1' type='pad'/>
+<connector signal='' id='318' package='1,6/0,9' element='PAD67' name='1' type='pad'/>
+<connector signal='' id='319' package='1,6/0,9' element='PAD68' name='1' type='pad'/>
+<connector signal='' id='320' package='1,6/0,9' element='PAD69' name='1' type='pad'/>
+<connector signal='' id='321' package='1,6/0,9' element='PAD70' name='1' type='pad'/>
+<connector signal='' id='322' package='1,6/0,9' element='PAD71' name='1' type='pad'/>
+<connector signal='' id='323' package='1,6/0,9' element='PAD72' name='1' type='pad'/>
+<connector signal='' id='324' package='1,6/0,9' element='PAD73' name='1' type='pad'/>
+<connector signal='' id='325' package='1,6/0,9' element='PAD74' name='1' type='pad'/>
+<connector signal='' id='326' package='1,6/0,9' element='PAD75' name='1' type='pad'/>
+<connector signal='' id='327' package='1,6/0,9' element='PAD76' name='1' type='pad'/>
+<connector signal='' id='328' package='1,6/0,9' element='PAD77' name='1' type='pad'/>
+<connector signal='' id='329' package='1,6/0,9' element='PAD78' name='1' type='pad'/>
+<connector signal='' id='330' package='1,6/0,9' element='PAD79' name='1' type='pad'/>
+<connector signal='' id='331' package='1,6/0,9' element='PAD80' name='1' type='pad'/>
+<connector signal='' id='332' package='1,6/0,9' element='PAD81' name='1' type='pad'/>
+<connector signal='' id='333' package='1,6/0,9' element='PAD82' name='1' type='pad'/>
+<connector signal='' id='334' package='1,6/0,9' element='PAD83' name='1' type='pad'/>
+</mnt>
+<unused>
+<connector signal='VDD' id='5' package='C1206' element='C1' name='1' type='smd'/>
+<connector signal='GND' id='6' package='C1206' element='C1' name='2' type='smd'/>
+<connector signal='5V' id='7' package='C0603' element='C2' name='1' type='smd'/>
+<connector signal='GND' id='8' package='C0603' element='C2' name='2' type='smd'/>
+<connector signal='VDD' id='9' package='C0603' element='C3' name='1' type='smd'/>
+<connector signal='GND' id='10' package='C0603' element='C3' name='2' type='smd'/>
+<connector signal='GND' id='11' package='C0603' element='C4' name='1' type='smd'/>
+<connector signal='RST' id='12' package='C0603' element='C4' name='2' type='smd'/>
+<connector signal='VCC' id='13' package='C0603' element='C5' name='1' type='smd'/>
+<connector signal='GND' id='14' package='C0603' element='C5' name='2' type='smd'/>
+<connector signal='VCC' id='15' package='C1206' element='C6' name='1' type='smd'/>
+<connector signal='GND' id='16' package='C1206' element='C6' name='2' type='smd'/>
+<connector signal='VDDX' id='17' package='C1206' element='C7' name='1' type='smd'/>
+<connector signal='GND' id='18' package='C1206' element='C7' name='2' type='smd'/>
+<connector signal='VDDX' id='19' package='C0603' element='C8' name='1' type='smd'/>
+<connector signal='GND' id='20' package='C0603' element='C8' name='2' type='smd'/>
+<connector signal='5V' id='21' package='SOD-123' element='D1' name='+' type='smd'/>
+<connector signal='VDD' id='22' package='SOD-123' element='D1' name='-' type='smd'/>
+<connector signal='5V' id='23' package='LED-0603' element='D2' name='+' type='smd'/>
+<connector signal='N$135' id='24' package='LED-0603' element='D2' name='-' type='smd'/>
+<connector signal='5V' id='25' package='SOD-123' element='D3' name='+' type='smd'/>
+<connector signal='VDDX' id='26' package='SOD-123' element='D3' name='-' type='smd'/>
+<connector signal='' id='107' package='HRS_DM3AT-SF-PEJM5' element='J11' name='1' type='smd'/>
+<connector signal='17_SS0' id='108' package='HRS_DM3AT-SF-PEJM5' element='J11' name='2' type='smd'/>
+<connector signal='19_MOSI0' id='109' package='HRS_DM3AT-SF-PEJM5' element='J11' name='3' type='smd'/>
+<connector signal='VCCSD' id='110' package='HRS_DM3AT-SF-PEJM5' element='J11' name='4' type='smd'/>
+<connector signal='18_SCK0' id='111' package='HRS_DM3AT-SF-PEJM5' element='J11' name='5' type='smd'/>
+<connector signal='GND' id='112' package='HRS_DM3AT-SF-PEJM5' element='J11' name='6' type='smd'/>
+<connector signal='16_MISO0' id='113' package='HRS_DM3AT-SF-PEJM5' element='J11' name='7' type='smd'/>
+<connector signal='' id='114' package='HRS_DM3AT-SF-PEJM5' element='J11' name='8' type='smd'/>
+<connector signal='GND' id='115' package='HRS_DM3AT-SF-PEJM5' element='J11' name='P1' type='smd'/>
+<connector signal='GND' id='116' package='HRS_DM3AT-SF-PEJM5' element='J11' name='P2' type='smd'/>
+<connector signal='GND' id='117' package='HRS_DM3AT-SF-PEJM5' element='J11' name='P3' type='smd'/>
+<connector signal='GND' id='118' package='HRS_DM3AT-SF-PEJM5' element='J11' name='P4' type='smd'/>
+<connector signal='' id='119' package='HRS_DM3AT-SF-PEJM5' element='J11' name='SWA' type='smd'/>
+<connector signal='' id='120' package='HRS_DM3AT-SF-PEJM5' element='J11' name='SWB' type='smd'/>
+<connector signal='3V_PI' id='135' package='A0R-JMP' element='JMP1' name='1' type='smd'/>
+<connector signal='VCC' id='136' package='A0R-JMP' element='JMP1' name='2' type='smd'/>
+<connector signal='5V' id='137' package='A0R-JMP' element='JMP1' name='3' type='smd'/>
+<connector signal='N$3' id='174' package='LED3535' element='LED1' name='1-DOUT' type='smd'/>
+<connector signal='GND' id='175' package='LED3535' element='LED1' name='2-GND' type='smd'/>
+<connector signal='TXX0' id='176' package='LED3535' element='LED1' name='3-DIN' type='smd'/>
+<connector signal='VDD' id='177' package='LED3535' element='LED1' name='4-VDD' type='smd'/>
+<connector signal='N$6' id='178' package='LED3535' element='LED2' name='1-DOUT' type='smd'/>
+<connector signal='GND' id='179' package='LED3535' element='LED2' name='2-GND' type='smd'/>
+<connector signal='NTX' id='180' package='LED3535' element='LED2' name='3-DIN' type='smd'/>
+<connector signal='VDDX' id='181' package='LED3535' element='LED2' name='4-VDD' type='smd'/>
+<connector signal='RX1' id='335' package='R0805' element='R1' name='1' type='smd'/>
+<connector signal='RXX1' id='336' package='R0805' element='R1' name='2' type='smd'/>
+<connector signal='TX0' id='337' package='R0805' element='R2' name='1' type='smd'/>
+<connector signal='TXX0' id='338' package='R0805' element='R2' name='2' type='smd'/>
+<connector signal='N$135' id='339' package='R0603' element='R3' name='1' type='smd'/>
+<connector signal='GND' id='340' package='R0603' element='R3' name='2' type='smd'/>
+<connector signal='VCCSD' id='341' package='R0603' element='R4' name='1' type='smd'/>
+<connector signal='VCC' id='342' package='R0603' element='R4' name='2' type='smd'/>
+<connector signal='RST' id='343' package='SW4-SMD-4.2X3.2X2.5MM' element='SW1' name='1' type='smd'/>
+<connector signal='RST' id='344' package='SW4-SMD-4.2X3.2X2.5MM' element='SW1' name='2' type='smd'/>
+<connector signal='GND' id='345' package='SW4-SMD-4.2X3.2X2.5MM' element='SW1' name='3' type='smd'/>
+<connector signal='GND' id='346' package='SW4-SMD-4.2X3.2X2.5MM' element='SW1' name='4' type='smd'/>
+</unused>
+</connectors>
+<!-- Add fake-via connectors to change pads to vias for hybrid parts  -->
+<!-- <fake-vias>  -->
+<!--		<connector signal='' id='173' package='1X3_STRIP' element='U$10' name='2' type='pad'/> -->
+<!-- </fake-vias> -->
+<!-- Add buses to connect connectors that don't have matching signal names  -->
+<!-- <buses>  -->
+<!--		<bus>  -->
+<!--			<connector signal='' id='173' package='1X3_STRIP' element='U$10' name='2' type='pad'/>  -->
+<!--			<connector signal='' id='174' package='1X3_STRIP' element='U$10' name='3' type='pad'/>  -->
+<!--			<via signal='N$84' />  -->
+<!--		</bus>  -->
+<!-- </buses>  -->
+</board-params>
