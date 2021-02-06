@@ -42,5 +42,5 @@ Another inside description posted at [Tiny Transistors](https://www.tinytransist
   -[RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!<br>
   -[Arduino RP2040 Connect](https://blog.arduino.cc/2021/01/20/welcome-raspberry-pi-to-the-world-of-microcontrollers/) Arduino board for RP2040.<br>
   -[Adafruit QtPy](https://www.adafruit.com/qtpy) Another SAMD21 dev. board.<br>
-  -[Eagle2Fritzing](https://github.com/squix78/eagle2fritzing-parent)An excelent project convert Eagle .brd to Fritzing part.<br> 
+  -[Eagle2Fritzing](https://github.com/squix78/eagle2fritzing-parent) A nice tool converts Eagle .brd to Fritzing part.<br> 
 
