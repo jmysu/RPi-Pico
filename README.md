@@ -18,8 +18,9 @@ With some added features:
 
 Fritzing part made by Eagle2Fritzing:<br>
 Parts located at here:(https://github.com/jmysu/RPi-Pico/tree/main/hardware/Fritzing)<br>
-<img src="pic/UnoPicoFritz0207.png" width=640> <br>
+<img src="pic/UnoPicoFritz0207.png" width=640> <br><br>
 
+<br>
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
 <br>
@@ -40,6 +41,6 @@ Another inside description posted at [Tiny Transistors](https://www.tinytransist
 ## References <br>
   -[RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!<br>
   -[Arduino RP2040 Connect](https://blog.arduino.cc/2021/01/20/welcome-raspberry-pi-to-the-world-of-microcontrollers/) Arduino board for RP2040.<br>
-  -[Adafruit QtPy](https://www.adafruit.com/qtpy) Another SAMD21 dev. board.<br><br>
-  -[Eagle2Fritzing](https://github.com/squix78/eagle2fritzing-parent)An excelent project convert Eagle .brd to Fritzing part. 
+  -[Adafruit QtPy](https://www.adafruit.com/qtpy) Another SAMD21 dev. board.<br>
+  -[Eagle2Fritzing](https://github.com/squix78/eagle2fritzing-parent)An excelent project convert Eagle .brd to Fritzing part.<br> 
 
