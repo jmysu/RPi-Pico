@@ -18,7 +18,7 @@ With some added features:
 
 Fritzing part made by Eagle2Fritzing:<br>
 Parts located at here:(https://github.com/jmysu/RPi-Pico/tree/main/hardware/Fritzing)<br>
-<img src="pic/UnoPicoFritz0207.png" width=600> <br>
+<img src="pic/UnoPicoFritz0207.png" width=640> <br>
 
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
