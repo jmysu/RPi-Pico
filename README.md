@@ -17,7 +17,7 @@ With some added features:
 <br>
 
 Fritzing part made by Eagle2Fritzing:<br>
-Parts located at here:(https://github.com/jmysu/RPi-Pico/tree/main/hardware/Fritzing)<br>
+Parts located at here:(https://github.com/jmysu/RPi-Pico/tree/main/hardware/Fritzing/FritzingUnoPico/bins)<br>
 <img src="pic/UnoPicoFritz0207.png" width=640> <br><br>
 
 <br>
