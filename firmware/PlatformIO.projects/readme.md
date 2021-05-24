@@ -1,3 +1,3 @@
 
-### PlatformIO.projects/tsetPico: Simple LED blinking for RPI-Pico Arduino w/ PlatformIO<br>
+### PlatformIO.projects/testPico: Simple LED blinking for RPI-Pico Arduino w/ PlatformIO<br>
 <img src="PlatformIO_testPico.png"> 
