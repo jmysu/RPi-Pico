@@ -228,7 +228,7 @@ void setup() {
 
 }
 
-
+uint8_t iRot =0;
 void loop() {
 
     // unconditional display, regardless of whether display is visible
@@ -253,9 +253,12 @@ void loop() {
         // confirm button handled
         isButtonPressed = false;
         
+        if (isDisplayVisible){
+          tft.setRotation(iRot++);
+          if (iRot>3) iRot=0;
+          }
     }
 
     // no need to be in too much of a hurry
     delay(100);
-   
 }
