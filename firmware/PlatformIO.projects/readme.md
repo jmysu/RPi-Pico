@@ -12,4 +12,4 @@ Driving the LED w/ PIO-PWM...<br>
 <img src="picoPWM.gif" width=400>
 ### PlatformIO.projects/picoPIOLCD: PIO LCD logo rotating for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
 Ported from Pico-SDK, .uf2 works, Arduino not yet>_<<br>
-<img src="PIcoPIO.png" width=400>
+<img src="PIcoPIO.png" width=400> <img src="picoPIOLCD.gif" width=400>
