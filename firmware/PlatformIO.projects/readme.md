@@ -6,3 +6,7 @@
 <img src="PicoLCDbuild0528.png" width=640> <img src="https://github.com/jmysu/RPi-Pico/blob/main/pic/PicoLCD7789_0528.gif" width=320>
 
 ### PlatformIO.projects/picoPIOLED: Simple PIO LED Blink for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
+Toggling the LED w/ PIO...<br>
+### PlatformIO.projects/picoPIOLED: Simple PIO LED Blink for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
+Driving the LED w/ PIO-PWM...<br>
+<img src="PicoPWM.gif" width=640>
