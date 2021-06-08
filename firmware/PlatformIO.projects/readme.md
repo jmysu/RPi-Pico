@@ -9,4 +9,4 @@
 Toggling the LED w/ PIO...<br>
 ### PlatformIO.projects/picoPIOLED: Simple PIO LED Blink for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
 Driving the LED w/ PIO-PWM...<br>
-<img src="PicoPWM.gif" width=640>
+<img src="picoPWM.gif" width=400>
