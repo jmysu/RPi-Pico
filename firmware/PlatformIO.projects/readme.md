@@ -10,3 +10,6 @@ Toggling the LED w/ PIO...<br>
 ### PlatformIO.projects/picoPIOLED: Simple PIO LED Blink for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
 Driving the LED w/ PIO-PWM...<br>
 <img src="picoPWM.gif" width=400>
+### PlatformIO.projects/picoPIOLCD: PIO LCD logo rotating for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
+Ported from Pico-SDK, .uf2 works, Arduino not yet>_<<br>
+<img src="picoLCD.png" width=400>
