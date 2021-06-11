@@ -184,10 +184,12 @@ void displayUpTime() {
 void setup() {
 
     // button press pulls pin LOW so configure HIGH
-    pinMode(Button_pin,INPUT_PULLUP);
+    pinMode(Button_pin, INPUT_PULLUP);
+    pinMode(LED_BUILTIN, OUTPUT);
 
     // use an interrupt to sense when the button is pressed
     attachInterrupt(digitalPinToInterrupt(Button_pin), senseButtonPressed, FALLING);
+    pinMode(Button_pin, INPUT_PULLUP); //MBED fix for attachInterrupt not works!!!
 
     #if (SerialDebugging)
     Serial.begin(115200); while (!Serial); Serial.println();
@@ -251,9 +253,10 @@ void loop() {
 
     // has the button been pressed?
     if (isButtonPressed) {
-        
+              
         // yes! toggle display visibility
         isDisplayVisible = !isDisplayVisible;
+        digitalWrite(LED_BUILTIN, isDisplayVisible);
 
         // apply
         tft.enableDisplay(isDisplayVisible);
@@ -272,6 +275,7 @@ void loop() {
           tft.setRotation(iRot++);
           if (iRot>3) iRot=0;
           }
+        delay(100);  
     }
 
     // no need to be in too much of a hurry
