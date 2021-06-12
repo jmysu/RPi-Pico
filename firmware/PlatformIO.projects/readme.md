@@ -16,5 +16,5 @@ Adapted from Adafruit Neopixels Pico PIO<br>
 <img src="picoNeo8.gif" width=400> <br>
 
 ### PlatformIO.projects/picoPIOLCD: PIO LCD logo rotating for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
-Ported from Pico-SDK, .uf2 works, Arduino not yet>_<<br>
+Ported from Pico-SDK, works for PicoKitB(ST7789) & PyBase(ST7735).<br>
 <img src="PIcoPIO.png" width=400> <img src="picoPIOLCD.gif" width=400>
