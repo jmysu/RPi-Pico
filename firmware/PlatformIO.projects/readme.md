@@ -11,7 +11,7 @@ Toggling the LED w/ PIO...<br>
 ### PlatformIO.projects/picoPIOLED: Simple PIO LED Blink for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
 Driving the LED w/ PIO-PWM...<br>
 <img src="picoPWM.gif" width=400> <img src="PyBasePWM.gif" width=400>
-### PlatformIO.projects/picoNeopixel: PIO Neopixels for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
+### PlatformIO.projects/picoNeoPixel: PIO Neopixels for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
 Adapted from Adafruit Neopixels Pico PIO<br>
 <img src="picoNeo8.gif" width=400> <br>
 
