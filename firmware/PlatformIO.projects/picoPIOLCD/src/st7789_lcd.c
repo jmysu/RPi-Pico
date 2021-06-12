@@ -10,12 +10,20 @@
 #include "hardware/pio.h"
 #include "hardware/gpio.h"
 #include "hardware/interp.h"
+#include "hardware/spi.h"
+ 
+#include "hardware/clocks.h"
 
 #include "st7789_lcd.pio.h"
 #include "raspberry_256x256_rgb565.h"
 
+//ST7735 128x150
+//#define SCREEN_WIDTH 128
+//#define SCREEN_HEIGHT 160
+//ST7789 240x240
 #define SCREEN_WIDTH 240
 #define SCREEN_HEIGHT 240
+
 #define IMAGE_SIZE 256
 #define LOG_IMAGE_SIZE 8
 /*
@@ -26,13 +34,27 @@
 #define PIN_RESET 4
 #define PIN_BL 5
 */
+//PicoKitB LCD Pin Define---
 #define PIN_BL    13
 #define PIN_RESET 12
 #define PIN_DIN   11
 #define PIN_CLK   10
 #define PIN_CS     9
 #define PIN_DC     8
+/*
+//PyBase LCD PIN Define---
+#define PyBASE_RST  13
+#define PyBASE_CS    9
+#define PyBASE_DC   12
+#define PyBASE_MOSI 11 
+#define PyBASE_SCK  10
 
+#define PIN_RESET PyBASE_RST
+#define PIN_DIN   PyBASE_MOSI
+#define PIN_CLK   PyBASE_SCK
+#define PIN_CS    PyBASE_CS
+#define PIN_DC    PyBASE_DC
+*/
 #define SERIAL_CLK_DIV 1.0f
 
 // Format: cmd length (including cmd byte), post delay in units of 5 ms, then cmd payload
@@ -51,9 +73,9 @@ static const uint8_t st7789_init_seq[] = {
 };
 
 static inline void lcd_set_dc_cs(bool dc, bool cs) {
-    sleep_us(1);
+    sleep_us(100);
     gpio_put_masked((1u << PIN_DC) | (1u << PIN_CS), !!dc << PIN_DC | !!cs << PIN_CS);
-    sleep_us(1);
+    sleep_us(100);
 }
 
 static inline void lcd_write_cmd(PIO pio, uint sm, const uint8_t *cmd, size_t count) {
@@ -87,34 +109,30 @@ static inline void st7789_start_pixels(PIO pio, uint sm) {
 
 int pioLCD() {
     //stdio_init_all();
- 
+
     PIO pio = pio0;
     uint sm = 0;
     uint offset = pio_add_program(pio, &st7789_lcd_program);
-    //st7789_lcd_program_init(pio, sm, offset, PIN_DIN, PIN_CLK, SERIAL_CLK_DIV);
 
-    gpio_init(PIN_DIN);
-    gpio_init(PIN_CLK);
-    gpio_init(PIN_CS);
-    gpio_init(PIN_DC);
-    gpio_init(PIN_RESET);
-    gpio_init(PIN_BL);
-    gpio_set_dir(PIN_DIN, GPIO_OUT);
-    gpio_set_dir(PIN_CLK, GPIO_OUT);
+    st7789_lcd_program_init(pio, sm, offset, PIN_DIN, PIN_CLK, SERIAL_CLK_DIV);
+
+    _gpio_init(PIN_CS);
+    _gpio_init(PIN_DC);
+    _gpio_init(PIN_RESET);
+
     gpio_set_dir(PIN_CS, GPIO_OUT);
     gpio_set_dir(PIN_DC, GPIO_OUT);
     gpio_set_dir(PIN_RESET, GPIO_OUT);
-    gpio_set_dir(PIN_BL, GPIO_OUT);
-    st7789_lcd_program_init(pio, sm, offset, PIN_DIN, PIN_CLK, SERIAL_CLK_DIV);
-
     gpio_put(PIN_CS, 1);
+
+    //Hardware LCD init! Important!!!
     gpio_put(PIN_RESET, 1);
     gpio_put(PIN_RESET, 0);
     sleep_ms(100);
     gpio_put(PIN_RESET, 1);
-    sleep_ms(100);
+    
     lcd_init(pio, sm, st7789_init_seq);
-    gpio_put(PIN_BL, 1);
+    //gpio_put(PIN_BL, 1);
 
 
     // Other SDKs: static image on screen, lame, boring
@@ -137,6 +155,8 @@ int pioLCD() {
     interp_set_config(interp0, 0, &lane0_cfg);
     interp_set_config(interp0, 1, &lane1_cfg);
     interp0->base[2] = (uint32_t) raspberry_256x256;
+    //interp0->base[2] = (uint32_t) jmy128x160;
+    
 
     float theta = 0.f;
     float theta_max = 2.f * (float) M_PI;
@@ -156,9 +176,9 @@ int pioLCD() {
             interp0->accum[1] = rotate[3] * y;
             for (int x = 0; x < SCREEN_WIDTH; ++x) {
                 uint16_t colour = *(uint16_t *) (interp0->pop[2]);
-                st7789_lcd_put(pio, sm, colour >> 8);
-                st7789_lcd_put(pio, sm, colour & 0xff);
-            }
+                st7789_lcd_put(pio, sm, (uint8_t)(colour >> 8));
+                st7789_lcd_put(pio, sm, (uint8_t)(colour & 0xff));
+            } 
         }
     }
 }

@@ -55,7 +55,7 @@ static inline void st7789_lcd_program_init(PIO pio, uint sm, uint offset, uint d
 // data left-justified (as we are using shift-to-left to get MSB-first serial)
 static inline void st7789_lcd_put(PIO pio, uint sm, uint8_t x) {
     while (pio_sm_is_tx_fifo_full(pio, sm))
-        ;
+        ;   
     *(volatile uint8_t*)&pio->txf[sm] = x;
 }
 // SM is done when it stalls on an empty FIFO
