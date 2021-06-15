@@ -18,6 +18,6 @@ Adapted from Adafruit Neopixels Pico PIO<br>
 ### PlatformIO.projects/picoPIOLCD: PIO LCD logo rotating for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
 Ported from Pico-SDK, works for PicoKitB(ST7789) & PyBase(ST7735).<br>
 <img src="PIcoPIO.png" width=400> <img src="picoPIOLCD.gif" width=400>
-
+<img src="PIcoPIO.png" width=400> <img src="jcPIO7735.gif" width=400>
 ### Reference
 [Online PIOASM](https://wokwi.com/tools/pioasm) (GitHub source: https://github.com/wokwi/pioasm-wasm)
