@@ -16,13 +16,11 @@
 
 #include "st7789_lcd.pio.h"
 #include "raspberry_256x256_rgb565.h"
+#include "JC256x256.h"
+//#include "stars256x256.h"
 
-//ST7735 128x150
-//#define SCREEN_WIDTH 128
-//#define SCREEN_HEIGHT 160
-//ST7789 240x240
-#define SCREEN_WIDTH 240
-#define SCREEN_HEIGHT 240
+
+#include "ST7735_128x160.h"
 
 #define IMAGE_SIZE 256
 #define LOG_IMAGE_SIZE 8
@@ -34,27 +32,41 @@
 #define PIN_RESET 4
 #define PIN_BL 5
 */
-//PicoKitB LCD Pin Define---
-#define PIN_BL    13
-#define PIN_RESET 12
-#define PIN_DIN   11
-#define PIN_CLK   10
-#define PIN_CS     9
-#define PIN_DC     8
-/*
-//PyBase LCD PIN Define---
-#define PyBASE_RST  13
-#define PyBASE_CS    9
-#define PyBASE_DC   12
-#define PyBASE_MOSI 11 
-#define PyBASE_SCK  10
+//#define PicoKitB7789
+#ifdef PicoKitB7789
+//ST7789 240x240
+#define SCREEN_WIDTH 240
+#define SCREEN_HEIGHT 240
+ //PicoKitB LCD Pin Define---
+ #define PIN_BL    13
+ #define PIN_RESET 12
+ #define PIN_DIN   11
+ #define PIN_CLK   10
+ #define PIN_CS     9
+ #define PIN_DC     8
+#endif
 
-#define PIN_RESET PyBASE_RST
-#define PIN_DIN   PyBASE_MOSI
-#define PIN_CLK   PyBASE_SCK
-#define PIN_CS    PyBASE_CS
-#define PIN_DC    PyBASE_DC
-*/
+//PyBase LCD PIN Define---
+#define PyBASE7735
+//ST7735 128x160
+
+#ifdef PyBASE7735
+ #define SCREEN_WIDTH 128
+ #define SCREEN_HEIGHT 160
+
+ #define PyBASE_RST  13
+ #define PyBASE_CS    9
+ #define PyBASE_DC   12
+ #define PyBASE_MOSI 11 
+ #define PyBASE_SCK  10
+
+ #define PIN_RESET PyBASE_RST
+ #define PIN_DIN   PyBASE_MOSI
+ #define PIN_CLK   PyBASE_SCK
+ #define PIN_CS    PyBASE_CS
+ #define PIN_DC    PyBASE_DC
+#endif
+
 #define SERIAL_CLK_DIV 1.0f
 
 // Format: cmd length (including cmd byte), post delay in units of 5 ms, then cmd payload
@@ -131,7 +143,11 @@ int pioLCD() {
     sleep_ms(100);
     gpio_put(PIN_RESET, 1);
     
-    lcd_init(pio, sm, st7789_init_seq);
+    #ifdef PyBASE7735
+     lcd_init(pio, sm, st7735_initSeq);
+    #else
+     lcd_init(pio, sm, st7789_init_seq);
+    #endif
     //gpio_put(PIN_BL, 1);
 
 
@@ -142,6 +158,7 @@ int pioLCD() {
     // coords (bits 16:9 of addr offset), and we'll represent coords with
     // 16.16 fixed point. ACCUM0,1 will contain current coord, BASE0/1 will
     // contain increment vector, and BASE2 will contain image base pointer
+    
 #define UNIT_LSB 16
     interp_config lane0_cfg = interp_default_config();
     interp_config_set_shift(&lane0_cfg, UNIT_LSB - 1); // -1 because 2 bytes per pixel
@@ -154,31 +171,40 @@ int pioLCD() {
 
     interp_set_config(interp0, 0, &lane0_cfg);
     interp_set_config(interp0, 1, &lane1_cfg);
-    interp0->base[2] = (uint32_t) raspberry_256x256;
-    //interp0->base[2] = (uint32_t) jmy128x160;
-    
+
+    #ifdef PicoKitB7789
+     interp0->base[2] = (uint32_t) raspberry_256x256;
+    #endif
+    #ifdef PyBASE7735
+     interp0->base[2] = (uint32_t) jc256x256;
+     //interp0->base[2] = (uint32_t) stars_256x256;
+    #endif
 
     float theta = 0.f;
     float theta_max = 2.f * (float) M_PI;
     while (1) {
         theta += 0.02f;
-        if (theta > theta_max)
+        if (theta > theta_max) {
             theta -= theta_max;
+            gpio_put(25, !gpio_get(25)); //toggling LED
+            }
         int32_t rotate[4] = {
                 cosf(theta) * (1 << UNIT_LSB), -sinf(theta) * (1 << UNIT_LSB),
                 sinf(theta) * (1 << UNIT_LSB), cosf(theta) * (1 << UNIT_LSB)
         };
-        interp0->base[0] = rotate[0];
-        interp0->base[1] = rotate[2];
+        interp0->base[0] = rotate[0]; //cosine X
+        interp0->base[1] = rotate[2]; //sine Y
         st7789_start_pixels(pio, sm);
         for (int y = 0; y < SCREEN_HEIGHT; ++y) {
-            interp0->accum[0] = rotate[1] * y;
-            interp0->accum[1] = rotate[3] * y;
+            interp0->accum[0] = rotate[1] * y * 2;
+            interp0->accum[1] = rotate[3] * y / 2;
             for (int x = 0; x < SCREEN_WIDTH; ++x) {
-                uint16_t colour = *(uint16_t *) (interp0->pop[2]);
+                uint16_t colour = *(uint16_t *) (interp0->pop[2]);    
+                // Swap Red and Blue (could check MADCTL setting to see if this is needed)
+                //colour = (colour>>11) | (colour<<11) | (colour & 0x7E0);     
                 st7789_lcd_put(pio, sm, (uint8_t)(colour >> 8));
-                st7789_lcd_put(pio, sm, (uint8_t)(colour & 0xff));
+                st7789_lcd_put(pio, sm, (uint8_t)(colour & 0xff)); 
             } 
-        }
+        }  
     }
 }
