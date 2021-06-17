@@ -16,9 +16,10 @@
 
 #include "st7789_lcd.pio.h"
 #include "raspberry_256x256_rgb565.h"
-#include "JC256x256.h"
+//#include "JC256x256.h"
 //#include "stars256x256.h"
-
+//#include "jc256.h" 
+#include "fkc256.h"
 
 #include "ST7735_128x160.h"
 
@@ -161,12 +162,17 @@ int pioLCD() {
     
 #define UNIT_LSB 16
     interp_config lane0_cfg = interp_default_config();
+    // 0111 1111 1111 1111
     interp_config_set_shift(&lane0_cfg, UNIT_LSB - 1); // -1 because 2 bytes per pixel
-    interp_config_set_mask(&lane0_cfg, 1, 1 + (LOG_IMAGE_SIZE - 1));
+    // 0000 0000 1111 1111
+    interp_config_set_mask(&lane0_cfg, 1, 1 + (LOG_IMAGE_SIZE - 1)); // mask 1~8
     interp_config_set_add_raw(&lane0_cfg, true); // Add full accumulator to base with each POP
+
     interp_config lane1_cfg = interp_default_config();
-    interp_config_set_shift(&lane1_cfg, UNIT_LSB - (1 + LOG_IMAGE_SIZE));
-    interp_config_set_mask(&lane1_cfg, 1 + LOG_IMAGE_SIZE, 1 + (2 * LOG_IMAGE_SIZE - 1));
+    // 0000 0000 0000 0111
+    interp_config_set_shift(&lane1_cfg, UNIT_LSB - (1 + LOG_IMAGE_SIZE)); //7
+    // 1111 1111 0000 0000
+    interp_config_set_mask(&lane1_cfg, 1 + LOG_IMAGE_SIZE, 1 + (2 * LOG_IMAGE_SIZE - 1)); //9~16
     interp_config_set_add_raw(&lane1_cfg, true);
 
     interp_set_config(interp0, 0, &lane0_cfg);
@@ -176,8 +182,9 @@ int pioLCD() {
      interp0->base[2] = (uint32_t) raspberry_256x256;
     #endif
     #ifdef PyBASE7735
-     interp0->base[2] = (uint32_t) jc256x256;
+     //interp0->base[2] = (uint32_t) jc256x256;
      //interp0->base[2] = (uint32_t) stars_256x256;
+     interp0->base[2] = (uint32_t) fkc256x256;
     #endif
 
     float theta = 0.f;
