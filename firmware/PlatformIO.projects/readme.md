@@ -16,9 +16,9 @@ Adapted from Adafruit Neopixels Pico PIO<br>
 <img src="picoNeo8.gif" width=400> <br>
 
 ### PlatformIO.projects/picoPIOLCD: PIO LCD logo rotating for RPI-Pico Arduino w/ PlatformIO/VSCode<br>
-Ported from Pico-SDK, works for PicoKitB(ST7789) & PyBase(ST7735).<br>
-Using 2 statemachine PIO for LCD writing;<br>
-Hardware-Interpolation for bitmap affine transformation...<br>
+Ported from Pico-SDK, works for PicoKitB(ST7789)(left) & PyBase(ST7735)(right).<br>
+Use 2 statemachine PIOs for LCD writing;<br>
+Hardware-Interpolation for affine transformation...<br>
 <img src="PIcoPIO.png" width=400> <img src="interp3b.png" width=300><br>
 <img src="picoPIOLCD.gif" width=300> <img src="picoPIO7735.gif" width=360>
 <br>
