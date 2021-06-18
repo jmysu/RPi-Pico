@@ -20,7 +20,7 @@ Ported from Pico-SDK, works for PicoKitB(ST7789) & PyBase(ST7735).<br>
 Using 2 statemachine PIO for LCD writing;<br>
 Hardware-Interpolation for bitmap affine transformation...<br>
 <img src="PIcoPIO.png" width=400> <img src="interp3b.png" width=300><br>
-<img src="picoPIOLCD.gif" width=300> <img src="fkcPico7735.gif" width=360>
+<img src="picoPIOLCD.gif" width=300> <img src="picoPIO7735.gif" width=360>
 <br>
 <br>
 ### Reference
