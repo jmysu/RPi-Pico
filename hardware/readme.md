@@ -8,4 +8,4 @@ With some added features:
  - SPI LCD interface w/ touch.
  - <br>
  - <img src="picoMateHATjlcpcb.png" width=400>
-   <img src="picoMateHAT0710.gif" width=480><br>
+   <img src="picoMateHAT0710.gif" width=400><br>
