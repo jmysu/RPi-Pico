@@ -7,4 +7,4 @@ With some added features:
  - 5V/3V3 power source selectable.
  - SPI LCD interface w/ touch.
  - <br>
-   <img src="picoPiHAT0710.gif" width=640><br>
+   <img src="picoMateHAT0710.gif" width=640><br>
