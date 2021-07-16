@@ -24,7 +24,6 @@ Parts located at here:(https://github.com/jmysu/RPi-Pico/tree/main/hardware/Frit
 RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-started/)
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
 <br>
-<br>
 ### Pico Pinout Terminal Diagram ### 
 curl https://gabmus.org/pico_pinout
 Raspberry Pi Pico pinout diagram
