@@ -25,7 +25,7 @@ RPi_Pico Pinout from (https://www.raspberrypi.org/documentation/pico/getting-sta
 <img src="pic/RPi_PicoPinout_R3.jpg" width=640>
 <br>
 ### Pico Pinout Terminal Diagram ### <br>
-curl https://gabmus.org/pico_pinout
+curl https://gabmus.org/pico_pinout <br>
 Raspberry Pi Pico pinout diagram
 
 <br>                        
