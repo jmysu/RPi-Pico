@@ -22,6 +22,11 @@ Hardware-Interpolation for affine transformation...<br>
 <img src="PIcoPIO.png" width=400> <img src="interp3b.png" width=300><br>
 <img src="picoPIOLCD.gif" width=300> <img src="FKC16.bmp" width=128> <img src="picoPIO7735.gif" width=400>
 <br>
+
+### PlatformIO.projects/picoPIONeopixelOLEDI2C: PIO Neopixels w/ I2C OLED<br>
+<img src="PIcoOLED.gif" width=400> 
 <br>
+<br>
+
 ### Reference
 [Online PIOASM](https://wokwi.com/tools/pioasm) (GitHub source: https://github.com/wokwi/pioasm-wasm)
