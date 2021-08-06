@@ -24,7 +24,7 @@ Hardware-Interpolation for affine transformation...<br>
 <br>
 
 ### PlatformIO.projects/picoPIONeopixelOLEDI2C: PIO Neopixels w/ I2C OLED<br>
-<img src="PIcoOLED.gif" width=400> 
+<img src="PicoOLED.gif" width=400> 
 <br>
 <br>
 
