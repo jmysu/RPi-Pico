@@ -41,11 +41,12 @@ Another inside description posted at [Tiny Transistors](https://www.tinytransist
 <img src="pic/RP2040-die-shot.jpg" width=640>
 
 <br>
-<br>
-<br>
+
 Finally, spi1 works on TFT_eSPI<br>
-<img src="pic/WS7789eSPI.png" 
-     
+<img src="pic/WS7789eSPI.png" w/ bodmer/TFT_eSPI @ ^2.4.32
+
+<br>
+<br>
 ## References <br>
   -[RPi_Pico](https://www.raspberrypi.org/documentation/pico/getting-started/) Pico Getting Started!<br>
   -[Arduino RP2040 Connect](https://blog.arduino.cc/2021/01/20/welcome-raspberry-pi-to-the-world-of-microcontrollers/) Arduino board for RP2040.<br>
